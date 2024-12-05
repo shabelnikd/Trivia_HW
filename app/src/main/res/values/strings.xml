@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Trivia_HW</string>
+
+    <string name="log_in">Log In</string>
+    <string name="game_now">GAME NOW</string>
+    <string name="up_with_email">Up with email</string>
+    <string name="facebook_icon">facebook_icon</string>
+    <string name="log_in_facebook">Log in with Facebook</string>
+    <string name="array_down">Array Down</string>
+    <string name="bg_triangle">Triangle</string>
+    <string name="geeks_text">Geeks</string>
+    <string name="geeks_icon">Geeks Icon</string>
+    <string name="or">OR</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="passwrod">Passwrod</string>
+    <string name="next">Next</string>
+</resources>
