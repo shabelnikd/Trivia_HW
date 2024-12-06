@@ -29,7 +29,6 @@
         app:tint="@color/light_green" />
 
 
-
     <TextView
         android:id="@+id/login_text"
         android:layout_width="wrap_content"
@@ -69,24 +68,6 @@
         app:layout_constraintTop_toTopOf="@+id/icon_main"
         app:layout_constraintVertical_bias="0.3" />
 
-    <ImageView
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:contentDescription="@string/array_down"
-        android:src="@drawable/down_arrow"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintTop_toTopOf="@+id/icon_main"
-        app:layout_constraintBottom_toBottomOf="@id/icon_main"
-
-        app:layout_constraintVertical_bias="0.73"
-
-
-
-        />
-
 
     <TextView
         android:id="@+id/geeks_text"
@@ -101,6 +82,23 @@
         app:layout_constraintEnd_toEndOf="@+id/geeks_icon"
         app:layout_constraintStart_toStartOf="@+id/geeks_icon"
         app:layout_constraintTop_toBottomOf="@+id/geeks_icon"
+
+
+        />
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:contentDescription="@string/array_down"
+        android:src="@drawable/down_arrow"
+
+        app:layout_constraintBottom_toBottomOf="@id/icon_main"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/icon_main"
+
+        app:layout_constraintVertical_bias="0.73"
 
 
         />
@@ -122,26 +120,23 @@
             style="@style/Widget.Material3.Button.IconButton.Outlined"
 
 
-
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:backgroundTint="@android:color/transparent"
+            android:layout_marginHorizontal="20dp"
 
+            android:backgroundTint="@android:color/transparent"
+            android:paddingVertical="10dp"
             android:text="@string/log_in_facebook"
+
             android:textColor="@color/black"
+            android:textSize="22sp"
             android:textStyle="bold"
 
-            android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
+
             app:layout_constraintStart_toStartOf="parent"
-
-            app:layout_constraintTop_toTopOf="parent"
-
-            android:layout_marginHorizontal="20dp"
-            android:paddingVertical="10dp"
-            >
+            app:layout_constraintTop_toTopOf="parent">
 
         </Button>
 
@@ -153,10 +148,10 @@
             android:contentDescription="@string/facebook_icon"
             android:src="@drawable/ic_facebook"
             app:layout_constraintBottom_toBottomOf="@id/facebook_button"
-            app:layout_constraintStart_toStartOf="@id/facebook_button"
-            app:layout_constraintTop_toTopOf="@id/facebook_button"
             app:layout_constraintEnd_toEndOf="@+id/facebook_button"
             app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="@id/facebook_button"
+            app:layout_constraintTop_toTopOf="@id/facebook_button"
 
             />
 
@@ -167,58 +162,54 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
             android:background="@android:color/darker_gray"
-            app:layout_constraintTop_toBottomOf="@id/facebook_button"
             app:layout_constraintEnd_toStartOf="@id/or_text"
+            app:layout_constraintTop_toBottomOf="@id/facebook_button"
 
             />
 
         <TextView
+            android:id="@+id/or_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/or_text"
 
             android:layout_marginTop="20dp"
 
             android:text="@string/or"
 
-            app:layout_constraintTop_toBottomOf="@id/facebook_button"
-            app:layout_constraintStart_toStartOf="@id/facebook_button"
             app:layout_constraintEnd_toEndOf="@id/facebook_button"
+            app:layout_constraintStart_toStartOf="@id/facebook_button"
+            app:layout_constraintTop_toBottomOf="@id/facebook_button"
 
             />
 
         <View
             android:layout_width="70dp"
             android:layout_height="1dp"
-            android:layout_marginTop="30dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
             android:background="@android:color/darker_gray"
-            app:layout_constraintTop_toBottomOf="@id/facebook_button"
             app:layout_constraintStart_toEndOf="@id/or_text"
-            />
-
-
+            app:layout_constraintTop_toBottomOf="@id/facebook_button" />
 
 
         <Button
+            android:id="@+id/email_button"
             android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
 
+            android:layout_marginTop="10dp"
             android:backgroundTint="@android:color/transparent"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-
             android:text="@string/up_with_email"
+
+            android:textColor="@color/black"
             android:textSize="18sp"
 
-            android:layout_marginTop="10dp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@id/or_text"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            />
-
-
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/or_text" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -228,20 +219,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:layout_marginHorizontal="20dp"
         android:backgroundTint="@color/blue"
+
+        android:paddingVertical="15dp"
         android:text="@string/game_now"
 
         android:textSize="22sp"
-        android:layout_marginHorizontal="20dp"
-
-        android:paddingVertical="15dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95"
 
         />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
